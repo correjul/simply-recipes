@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simply Recipes</title>
+   
+    <!-- Axios for making HTTP requests.  -->
+    <script src="https://unpkg.com/axios@0.24.0/dist/axios.min.js"></script>
+     
+    <link rel="stylesheet" href="https://use.typekit.net/pyd2drn.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+        <div class="logo" id="logo">
+          <img src="img/logo_3.png" style="width:100%">
+        </div>
+    </header>
+      <!-- Search Bar  -->
+      <div class="search">
+      <input id="search" type="text" name="search" placeholder="Try Searching for Salmon">
+        <button type="submit" id="submit">
+            <p id="searchBtn">SEARCH</p>
+        </button>
+      </div>
+      <div class="default" id="default">
+        <img src="img/default.png" class="defaultImg">
+          <div class="defaultMessage">
+          <h1 class="headers defaultHeader">Find Your New Favourite Recipe!</h1>
+          <p class="defaultText">Use the search bar to get started</p>
+        </div>
+      </div>
+        <div id="recipeBox"> 
+            <!-- Recipe List will go here -->
+        </div>
+        <div id="recipes"> 
+          <!-- Recipe Name -->
+          <h1 class="headers" id="name">Placeholder</h2>
+          <!-- Recipe Image -->
+          <div id="recipeImg"></div>
+          <div class="insructions">
+            <h2 class="headers">Insructions:</h2>
+            <ol id="ol">
+              <!-- Intructions goes here -->
+            </ol>
+          </div>
+          <h2 class="ingredients headers">Ingredients:</h2>
+          <div id="ingredientList">
+            <!-- List of ingredients goes here -->
+          </div>
+      </div>
+
+      <footer>
+        <p>Powered by <a href="https://spoonacular.com/food-api" target="_blank">Spoonacular</a></p>
+      </footer>
+
+	<script src="script.js"></script>
+  </body>
+</html>
